@@ -89,9 +89,10 @@ void display(void) {
 		glVertex3f(0.15f, -0.87f, 0.0f);
 	glEnd();
 
-	/* ±è */
+	/* ê¹€ */
 	glColor3f(0, 0, 1);
-	glBegin(GL_QUADS); //¤¡
+	//ã„±
+	glBegin(GL_QUADS); 
 		glVertex3f(-0.2f, 0.2f, 0.0f);
 		glVertex3f(0.0f, 0.2f, 0.0f);
 		glVertex3f(0.0f, 0.15f, 0.0f);
@@ -103,14 +104,15 @@ void display(void) {
 		glVertex3f(-0.05f, 0.0f, 0.0f);
 	glEnd();
 
-	glBegin(GL_QUADS); // ¤Ó
+	// ã…£
+	glBegin(GL_QUADS); 
 		glVertex3f(0.1f, 0.3f, 0.0f);
 		glVertex3f(0.15f, 0.3f, 0.0f);
 		glVertex3f(0.15f, -0.05f, 0.0f);
 		glVertex3f(0.1f, -0.05f, 0.0f);
 	glEnd();
 
-	// ¤±: Å« ÆÄ¶õ»ö ³×¸ğ
+	// ã…: í° íŒŒë€ìƒ‰ ë„¤ëª¨
 	glBegin(GL_QUADS); 
 		glVertex3f(-0.05f, -0.1f, 0.0f);
 		glVertex3f(0.16f, -0.1f, 0.0f);
@@ -118,7 +120,7 @@ void display(void) {
 		glVertex3f(-0.05f, -0.25f, 0.0f);
 	glEnd();
 
-	// ¤± : ÆÄ¶õ¼¡ ³×¸ğ ¾È¿¡ ÀÛÀº °ËÁ¤»ö ³×¸ğ
+	// ã… : íŒŒë€ìƒ¥ ë„¤ëª¨ ì•ˆì— ì‘ì€ ê²€ì •ìƒ‰ ë„¤ëª¨
 	glColor3f(0, 0, 0);
 	glBegin(GL_QUADS); 
 		glVertex3f(0.0f, -0.15f, 0.0f);
@@ -128,10 +130,10 @@ void display(void) {
 	glEnd();
 
 	
-	// ±è : white line
+	// ê¹€ : white line
 	glColor3f(1, 1, 1);
 	glLineWidth(2.0);
-	glBegin(GL_LINE_LOOP);  // ¤¡
+	glBegin(GL_LINE_LOOP);  // ã„±
 		glVertex3f(-0.2, 0.2, 0.0);
 		glVertex3f(0.0, 0.2, 0.0);
 		glVertex3f(0.0, 0.0, 0.0);
@@ -140,21 +142,21 @@ void display(void) {
 		glVertex3f(-0.2, 0.15, 0.0);
 	glEnd();
 
-	glBegin(GL_LINE_LOOP);  // ¤Ó
+	glBegin(GL_LINE_LOOP);  // ã…£
 		glVertex3f(0.1f, 0.3f, 0.0f);
 		glVertex3f(0.15f, 0.3f, 0.0f);
 		glVertex3f(0.15f, -0.05f, 0.0f);
 		glVertex3f(0.1f, -0.05f, 0.0f);
 	glEnd();
 	
-	glBegin(GL_LINE_LOOP);  // ¤±
+	glBegin(GL_LINE_LOOP);  // ã…
 		glVertex3f(-0.05f, -0.1f, 0.0f);
 		glVertex3f(0.16f, -0.1f, 0.0f);
 		glVertex3f(0.16f, -0.25f, 0.0f);
 		glVertex3f(-0.05f, -0.25f, 0.0f);
 	glEnd();
 
-	glBegin(GL_LINE_LOOP);  // ÀÛÀº ¤±
+	glBegin(GL_LINE_LOOP);  // ì‘ì€ ã…
 		glVertex3f(0.0f, -0.15f, 0.0f);
 		glVertex3f(0.11f, -0.15f, 0.0f);
 		glVertex3f(0.11f, -0.2f, 0.0f);
