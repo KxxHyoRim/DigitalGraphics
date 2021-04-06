@@ -57,7 +57,7 @@ VECTOR3D VECTOR3D::operator*(float v) {
 
 
 float VECTOR3D::Magnitude() {
-	return sqrt(x * x + y * y + z * z);  //#include CMath �����൵ �ǳ�?
+	return sqrt(x * x + y * y + z * z);  //#include CMath ¾ÈÇØÁàµµ µÇ³ª?
 }
 
 float VECTOR3D::InnerProduct(VECTOR3D v) {
@@ -136,7 +136,6 @@ int main() {
 	/* Magnitude of Vector A */
 	cout << "\n[Magnitude of vector a]\n";
 	cout << a.Magnitude() << endl;;
-
 
 	/* Dot product of a and b*/
 	cout << "\n[Inner/Dot product of a and b]\n";
